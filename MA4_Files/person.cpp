@@ -22,21 +22,21 @@ int Person::get(){
 	}
 
 int Person::fib(){
-	return fib_p(age)
+	return fib_p(age);
 	}	
 
 int  Person::fib_p(){
 	 if n <= 1:
-		return n
+		return n;
 	 else:
-		return(fib_py(n-1) + fib_py(n-2))
+		return(fib_py(n-1) + fib_py(n-2));
 	}
 
- 
+
 void Person::set(int n){
 	age = n;
 	}
-
+#engrej 
 
 extern "C"{
 	Person* Person_new(int n) {return new Person(n);}
