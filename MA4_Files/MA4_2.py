@@ -33,9 +33,10 @@ def main():
 	times_numba = []
 	times_cpp = []
 	times_py = []
+	x = range(30,45,1)
 
 
-	for i in range(30,33,1):
+	for i in range(x):
 		start = pc()
 		fib_py(i)
 		end = pc()
@@ -54,6 +55,11 @@ def main():
 
 	
 	print(times_py, times_numba, times_cpp)
+
+	plt.plot(x, times_py, label='Python')
+	plt.plot(x, times_numba, label='Numba')
+	plt.plot(x, times_cpp, label='C++')
+	plt.savefig('plot_MA42_30_45.png')
 
 
 
