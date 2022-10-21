@@ -6,8 +6,11 @@ class Person{
 		Person(int);
 		int get();
 		void set(int);
+		int fib(); 
+
 	private:
 		int age;
+		int fib_p(int);
 	};
  
 Person::Person(int n){
@@ -17,6 +20,18 @@ Person::Person(int n){
 int Person::get(){
 	return age;
 	}
+
+int Person::fib(){
+	return fib_p(age)
+	}	
+
+int  Person::fib_p(){
+	 if n <= 1:
+		return n
+	 else:
+		return(fib_py(n-1) + fib_py(n-2))
+	}
+
  
 void Person::set(int n){
 	age = n;
