@@ -54,7 +54,6 @@ def main():
 		times_cpp.append(end-start)
 
 	
-	print(times_py, times_numba, times_cpp)
 
 	plt.plot(x, times_py, label='Python')
 	plt.plot(x, times_numba, label='Numba')
