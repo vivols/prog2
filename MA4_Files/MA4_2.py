@@ -23,12 +23,39 @@ def main():
 	
 
 
-	f = Person(5)
+	'''f = Person(5)
 	print(f.get())
 	print(f.fib()) 
 	
 	print(fib_py(8))
-	print(fib_numba(7))
+	print(fib_numba(7))'''
+
+    times_py = []
+	times_numba = []
+	times_cpp = []
+
+
+	for i in range(30,33,1):
+		start = pc()
+		fib_py(i)
+		end = pc()
+		times_py.append(end-start)
+
+		start = pc()
+		fib_numba(i)
+		end = pc()
+		times_numba.append(end-start)
+
+		start = pc()
+		f = Person(i)
+		f.fib() 
+		end = pc()
+		times_cpp.append(end-start)
+
+	
+	print(times_py, times_numba, times_cpp)
+
+
 
 if __name__ == '__main__':
 	main()
