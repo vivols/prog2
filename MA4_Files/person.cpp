@@ -1,4 +1,4 @@
-#include <cstdlib>
+#include <cstdlib> 
 // Person class 
 
 class Person{
@@ -25,7 +25,7 @@ int Person::fib(){
 	return fib_p(age);
 	}	
 
-int  Person::fib_p(){
+int  Person::fib_p(int n){
 	 if n <= 1:
 		return n;
 	 else:
