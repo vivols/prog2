@@ -26,11 +26,12 @@ int Person::fib(){
 	}	
 
 int  Person::fib_p(int n){
-	 if n <= 1:{
+	  if(n <= 1):{
 		return n;
 	} else: {
 		return(fib_py(n-1) + fib_py(n-2));
 	}
+}
 
 void Person::set(int n){
 	age = n;
