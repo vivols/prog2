@@ -36,7 +36,7 @@ def main():
 	x = range(30,45,1)
 
 
-	for i in range(x):
+	for i in x:
 		start = pc()
 		fib_py(i)
 		end = pc()
