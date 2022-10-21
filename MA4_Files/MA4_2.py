@@ -30,9 +30,9 @@ def main():
 	print(fib_py(8))
 	print(fib_numba(7))'''
 
-    times_py = []
 	times_numba = []
 	times_cpp = []
+	times_py = []
 
 
 	for i in range(30,33,1):
