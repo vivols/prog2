@@ -26,10 +26,10 @@ int Person::fib(){
 	}	
 
 int  Person::fib_p(int n){
-	  if(n <= 1):{
+	  if (n <= 1){
 		return n;
-	} else: {
-		return(fib_py(n-1) + fib_py(n-2));
+	} else {
+		return(fib_p(n-1) + fib_p(n-2));
 	}
 }
 
