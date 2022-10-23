@@ -33,7 +33,8 @@ def main():
 	times_numba = []
 	times_cpp = []
 	times_py = []
-	x = range(30,45,1)
+	#x = range(30,45,1)
+	x = range(20,30,1)
 
     
 	for i in x:
@@ -47,21 +48,26 @@ def main():
 		end = pc()
 		times_numba.append(end-start)
 
-		start = pc()
+		'''start = pc()
 		f = Person(i)
 		f.fib() 
 		end = pc()
-		times_cpp.append(end-start)
+		times_cpp.append(end-start)'''
 
 	
 
-	plt.plot(x, times_py, label='Python')
+	'''plt.plot(x, times_py, label='Python')
 	plt.plot(x, times_numba, label='Numba')
 	plt.plot(x, times_cpp, label='C++')
 	plt.legend(['Python', 'Numba', 'C++']) 
 	plt.savefig('plot_MA42_30_45.png')
-	print('done')
+	print('done')'''
 
+	plt.plot(x, times_py, label='Python')
+	plt.plot(x, times_numba, label='Numba')
+	plt.legend(['Python', 'Numba']) 
+	plt.savefig('plot_MA42_20_30.png')
+	print('done')
 
 
 if __name__ == '__main__':
