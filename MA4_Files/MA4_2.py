@@ -33,12 +33,18 @@ def main():
 	times_numba = []
 	times_cpp = []
 	times_py = []
-	x = range(30,35,1)
-
-	print(fib_numba(29))
-
+	x = range(29,35,1)
 
 	for i in x:
+		start = pc()
+		fib_numba(i)
+		end = pc()
+		times_numba.append(end-start)
+
+	print(times_numba)
+
+    
+	'''for i in x:
 		start = pc()
 		fib_py(i)
 		end = pc()
@@ -62,7 +68,7 @@ def main():
 	plt.plot(x, times_cpp, label='C++')
 	plt.legend(['Python', 'Numba', 'C++']) 
 	plt.savefig('plot_MA42_30_45.png')
-	print('done')
+	print('done')'''
 
 
 
