@@ -35,6 +35,8 @@ def main():
 	times_py = []
 	x = range(30,35,1)
 
+	print(fib_numba(29))
+
 
 	for i in x:
 		start = pc()
