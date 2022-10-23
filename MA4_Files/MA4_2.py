@@ -58,6 +58,7 @@ def main():
 	plt.plot(x, times_py, label='Python')
 	plt.plot(x, times_numba, label='Numba')
 	plt.plot(x, times_cpp, label='C++')
+	plt.legend(['Python', 'Numba', 'C++']) 
 	plt.savefig('plot_MA42_30_45.png')
 	print('done')
 
