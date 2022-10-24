@@ -21,13 +21,6 @@ def main():
 		else:
 			return(fib_numba(n-1) + fib_numba(n-2))
 	
-
-	'''f = Person(5)
-	print(f.get())
-	print(f.fib()) 
-	
-	print(fib_py(8))
-	print(fib_numba(7))'''
     
 	times_numba = []
 	times_cpp = []
@@ -70,7 +63,6 @@ def main():
 
 
 	#for n = 47
-
 	print(f'Fibonacci for n = 47, using Numba: ',fib_numba(47))
 
 	f = Person(47)
@@ -78,7 +70,10 @@ def main():
 	
 	print('done')
 
-
+    #Fibonacci for n = 47, using Numba:  2971215073
+    #Fibonacci for n = 47, using C++:  -1323752223    ???
+    #done
+	#(quick google search says): For integers larger than 2^31, c++ handles it as a negative value. You can use Bigint data type to solve that problem.
 
 
 if __name__ == '__main__':
