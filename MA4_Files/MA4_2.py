@@ -71,10 +71,12 @@ def main():
 
 	#for n = 47
 
-	print(f'Fibonacci for n = 47, using Numba: ',fib_numba(7))
+	print(f'Fibonacci for n = 47, using Numba: ',fib_numba(47))
 
-	f = Person(8)
+	f = Person(47)
 	print(f'Fibonacci for n = 47, using C++: ',f.fib())
+	
+	print('done')
 
 
 
