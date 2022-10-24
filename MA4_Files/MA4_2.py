@@ -22,7 +22,6 @@ def main():
 			return(fib_numba(n-1) + fib_numba(n-2))
 	
 
-
 	'''f = Person(5)
 	print(f.get())
 	print(f.fib()) 
@@ -34,10 +33,10 @@ def main():
 	times_cpp = []
 	times_py = []
 	#x = range(30,45,1)
-	x = range(20,30,1)
+	#x = range(20,30,1)
 
     
-	for i in x:
+	'''for i in x:
 		start = pc()
 		fib_py(i)
 		end = pc()
@@ -48,7 +47,7 @@ def main():
 		end = pc()
 		times_numba.append(end-start)
 
-		'''start = pc()
+		start = pc()
 		f = Person(i)
 		f.fib() 
 		end = pc()
@@ -63,11 +62,21 @@ def main():
 	plt.savefig('plot_MA42_30_45.png')
 	print('done')'''
 
-	plt.plot(x, times_py, label='Python')
+	'''plt.plot(x, times_py, label='Python')
 	plt.plot(x, times_numba, label='Numba')
 	plt.legend(['Python', 'Numba']) 
 	plt.savefig('plot_MA42_20_30.png')
-	print('done')
+	print('done')'''
+
+
+	#for n = 47
+
+	print(f'Fibonacci for n = 47, using Numba: ',fib_numba(7))
+
+	f = Person(8)
+	print(f'Fibonacci for n = 47, using C++: ',f.fib())
+
+
 
 
 if __name__ == '__main__':
