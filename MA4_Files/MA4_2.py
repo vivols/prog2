@@ -44,7 +44,8 @@ def main():
 		f = Person(i)
 		f.fib() 
 		end = pc()
-		times_cpp.append(end-start)'''
+		times_cpp.append(end-start)
+		hejehje'''
 
 	
 
