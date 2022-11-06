@@ -51,10 +51,10 @@ if __name__ == "__main__":
 
 
 """
-Tiden för uppgift 1.2 tog 40.84667759994045 sekunder
-Uträknad volym: 1.890304
+Tiden för uppgift 1.2 tog 53.77094779998879 sekunder
+Uträknad volym: 1.8964480000000001
 Faktiska volymen: 1.8841038793898994
-Tiden för uppgift 1.2 med parallellprogrammering tog 10.150740400073119 sekunder
+Tiden för uppgift 1.2 med parallellprogrammering tog 7.3549154000065755 sekunder
 Klart!
 """
 
