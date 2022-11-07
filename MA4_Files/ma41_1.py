@@ -1,4 +1,4 @@
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import random
 import math
 import os
@@ -22,15 +22,15 @@ def M_c_pi(n):
     print(f'Approximated pi = {round(4*len(koordinates_circ_x)/n, 3)}')
     print(f'math.pi = {round(math.pi, 3)}')
 
-    #plt.rcParams["figure.figsize"] = (6,6)
-    #plt.plot(koordinates_circ_x,koordinates_circ_y,'r.')
-    #plt.plot(koordinates_square_x, koordinates_square_y,'b.')
-    #plt.savefig()  
-    #plt.show()
+    plt.rcParams["figure.figsize"] = (6,6)
+    plt.plot(koordinates_circ_x,koordinates_circ_y,'r.')
+    plt.plot(koordinates_square_x, koordinates_square_y,'b.')
+    plt.savefig(f"plot_MA4_1_{n}")  
+    plt.show()
 
 def main():
-    M_c_pi(1000)
-    M_c_pi(10000)
+    #M_c_pi(1000)
+    #M_c_pi(10000)
     M_c_pi(100000)
     
 
