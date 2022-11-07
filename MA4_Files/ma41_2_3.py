@@ -13,15 +13,16 @@ def approx_V_dsphere(n,d):
 
     Vd = ((math.pi)**(d/2))/(math.gamma((d/2)+1))
 
-    #return(approx_Vd, Vd)   #För uppgift 1.2
-    return(approx_Vd)        #För uppgift 1.3
+    return(approx_Vd, Vd)   #För uppgift 1.2
+    #return(approx_Vd)        #För uppgift 1.3
 
 
 def main():
     #För uppgift 1.2 
-    #print(f'Approximated value for the hyperspehere with dimension 2: {round(approx_V_dsphere(100000,2)[0], 4)}, actual volume: {round(approx_V_dsphere(100000,2)[1], 4)}')
-    #print(f'Approximated value for the hyperspehere with dimension 2: {round(approx_V_dsphere(100000,11)[0], 4)}, actual volume: {round(approx_V_dsphere(100000,11)[1], 4)}')
+    print(f'Approximated value for the hyperspehere with dimension 2: {round(approx_V_dsphere(100000,2)[0], 4)}, actual volume: {round(approx_V_dsphere(100000,2)[1], 4)}')
+    print(f'Approximated value for the hyperspehere with dimension 2: {round(approx_V_dsphere(100000,11)[0], 4)}, actual volume: {round(approx_V_dsphere(100000,11)[1], 4)}')
     
+    """
     #För uppgift 1.3 
     start = pc()
     approx_V_dsphere(10000000, 11)
@@ -42,7 +43,7 @@ def main():
     end = pc()
     print(f'Uträknad volym: {results}')
     print(f'Faktiska volymen: {Vd}')
-    print (f'Tiden för uppgift 1.2 med parallellprogrammering tog {end-start} sekunder')
+    print (f'Tiden för uppgift 1.2 med parallellprogrammering tog {end-start} sekunder')"""
  
     print('Klart!')
 
